@@ -6,16 +6,14 @@ import com.trivago.searchcore.casestudy.deals.models.DealsResponse;
 import com.trivago.searchcore.casestudy.deals.models.ItemDeals;
 import com.trivago.searchcore.casestudy.deals.store.DealsStorageService;
 import com.trivago.searchcore.casestudy.reactive.pricefetching.ReactivePriceFetchingHandler;
-
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Collection;
-
-import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
+
+import java.util.Collection;
 
 import static com.trivago.searchcore.casestudy.deals.models.ItemDeals.DONE;
 import static com.trivago.searchcore.casestudy.deals.models.ItemDeals.EMPTY;
